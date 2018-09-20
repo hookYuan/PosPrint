@@ -1,0 +1,442 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ll_print"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical"
+    android:padding="@dimen/size_16"
+    android:visibility="visible">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:paddingBottom="@dimen/size_16"
+        android:text="会   客   凭   证"
+        android:textColor="@color/colorFont33"
+        android:textSize="@dimen/font_28"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="访客等级：高级访客"
+        android:textColor="@color/colorFont33"
+        android:textSize="@dimen/font_18" />
+
+    <TextView
+        android:id="@+id/tv_visitorTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/size_8"
+        android:text="来访时间：2018-02-16  10:56"
+        android:textColor="@color/colorFont33"
+        android:textSize="@dimen/font_18" />
+
+    <View
+        style="@style/w_line"
+        android:layout_marginTop="@dimen/size_8"
+        android:background="@color/black"></View>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <View
+            style="@style/h_line"
+            android:background="@color/black"></View>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/size_6"
+            android:layout_marginRight="@dimen/size_6"
+            android:ems="1"
+            android:text="访客信息"
+            android:textColor="@color/colorFont33" />
+
+        <View
+            style="@style/h_line"
+            android:background="@color/black"></View>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="@dimen/size_90"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="@dimen/size_40"
+                        android:layout_marginLeft="@dimen/size_6"
+                        android:gravity="center_vertical"
+                        android:text="姓名"
+                        android:textSize="@dimen/font_18" />
+
+                    <View
+                        style="@style/w_line"
+                        android:background="@color/black"></View>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="@dimen/size_40"
+                        android:layout_marginLeft="@dimen/size_6"
+                        android:gravity="center_vertical"
+                        android:text="性别"
+                        android:textSize="@dimen/font_18" />
+
+                    <View
+                        style="@style/w_line"
+                        android:background="@color/black"></View>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="@dimen/size_40"
+                        android:layout_marginLeft="@dimen/size_6"
+                        android:gravity="center_vertical"
+                        android:text="民族"
+                        android:textSize="@dimen/font_18" />
+
+                    <View
+                        style="@style/w_line"
+                        android:background="@color/black"></View>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="@dimen/size_40"
+                        android:layout_marginLeft="@dimen/size_6"
+                        android:gravity="center_vertical"
+                        android:text="所带物品"
+                        android:textSize="@dimen/font_18" />
+
+                    <View
+                        style="@style/w_line"
+                        android:background="@color/black"></View>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="@dimen/size_40"
+                        android:layout_marginLeft="@dimen/size_6"
+                        android:gravity="center_vertical"
+                        android:text="联系电话"
+                        android:textSize="@dimen/font_18" />
+
+                </LinearLayout>
+
+                <View
+                    style="@style/h_line"
+                    android:background="@color/black"></View>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.2"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/tv_visitorName"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/size_40"
+                        android:gravity="center"
+                        android:text="费立新"
+                        android:textSize="@dimen/font_18" />
+
+                    <View
+                        style="@style/w_line"
+                        android:background="@color/black"></View>
+
+                    <TextView
+                        android:id="@+id/tv_gender"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/size_40"
+                        android:gravity="center"
+                        android:text="男"
+                        android:textSize="@dimen/font_18" />
+
+                    <View
+                        style="@style/w_line"
+                        android:background="@color/black"></View>
+
+                    <TextView
+                        android:id="@+id/tv_folk"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/size_40"
+                        android:gravity="center"
+                        android:text="汉族"
+                        android:textSize="@dimen/font_18" />
+
+                    <View
+                        style="@style/w_line"
+                        android:background="@color/black"></View>
+
+                    <TextView
+                        android:id="@+id/tv_goods"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/size_40"
+                        android:gravity="center"
+                        android:text=""
+                        android:textSize="@dimen/font_18" />
+
+                    <View
+                        style="@style/w_line"
+                        android:background="@color/black"></View>
+
+                    <TextView
+                        android:id="@+id/tv_visitorPhone"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/size_40"
+                        android:gravity="center"
+                        android:text="1504434231"
+                        android:textSize="@dimen/font_18" />
+
+                </LinearLayout>
+
+                <View
+                    style="@style/h_line"
+                    android:background="@color/black"></View>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1.4">
+
+                    <ImageView
+                        android:id="@+id/iv_avatar"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/photo" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <View
+                style="@style/w_line"
+                android:background="@color/black"></View>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="@dimen/size_90"
+                    android:layout_height="@dimen/size_40"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="@dimen/size_6"
+                    android:text="证件号码"
+                    android:textSize="@dimen/font_18" />
+
+                <View
+                    style="@style/h_line"
+                    android:background="@color/black"></View>
+
+                <TextView
+                    android:id="@+id/iv_idCard"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2.8"
+                    android:paddingLeft="@dimen/size_12"
+                    android:text="22342197806291811"
+                    android:textSize="@dimen/font_18" />
+
+            </LinearLayout>
+
+
+            <View
+                style="@style/w_line"
+                android:background="@color/black"></View>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="@dimen/size_90"
+                    android:layout_height="@dimen/size_40"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="@dimen/size_6"
+                    android:text="来访事由"
+                    android:textSize="@dimen/font_18" />
+
+                <View
+                    style="@style/h_line"
+                    android:background="@color/black"></View>
+
+                <TextView
+                    android:id="@+id/tv_thing"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2.8"
+                    android:paddingLeft="@dimen/size_12"
+                    android:text="没有什么事"
+                    android:textSize="@dimen/font_18" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <View
+            style="@style/h_line"
+            android:background="@color/black"></View>
+    </LinearLayout>
+
+    <View
+        style="@style/w_line"
+        android:background="@color/black"></View>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <View
+            style="@style/h_line"
+            android:background="@color/black"></View>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/size_6"
+            android:layout_marginRight="@dimen/size_6"
+            android:ems="1"
+            android:text="被访人"
+            android:textColor="@color/colorFont33" />
+
+        <View
+            style="@style/h_line"
+            android:background="@color/black"></View>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="@dimen/size_90"
+                    android:layout_height="@dimen/size_40"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="@dimen/size_6"
+                    android:text="姓名"
+                    android:textSize="@dimen/font_18" />
+
+                <View
+                    style="@style/h_line"
+                    android:background="@color/black"></View>
+
+                <TextView
+                    android:id="@+id/tv_masterName"
+                    android:layout_width="@dimen/size_90"
+                    android:layout_height="@dimen/size_40"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="@dimen/size_6"
+                    android:text="袁冶"
+                    android:textSize="@dimen/font_18" />
+            </LinearLayout>
+
+            <View
+                style="@style/w_line"
+                android:background="@color/black"></View>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="@dimen/size_90"
+                    android:layout_height="@dimen/size_40"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="@dimen/size_6"
+                    android:text="被访部门"
+                    android:textSize="@dimen/font_18" />
+
+                <View
+                    style="@style/h_line"
+                    android:background="@color/black"></View>
+
+                <TextView
+                    android:id="@+id/tv_dept"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/size_40"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="@dimen/size_6"
+                    android:text="研发中心"
+                    android:textSize="@dimen/font_18" />
+            </LinearLayout>
+
+            <View
+                style="@style/w_line"
+                android:background="@color/black"></View>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="@dimen/size_90"
+                    android:layout_height="@dimen/size_40"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="@dimen/size_6"
+                    android:text="房间号"
+                    android:textSize="@dimen/font_18" />
+
+                <View
+                    style="@style/h_line"
+                    android:background="@color/black"></View>
+
+                <TextView
+                    android:id="@+id/tv_door"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/size_40"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="@dimen/size_6"
+                    android:text="13楼1308"
+                    android:textSize="@dimen/font_18" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <View
+            style="@style/h_line"
+            android:background="@color/black"></View>
+    </LinearLayout>
+
+    <View
+        style="@style/w_line"
+        android:background="@color/black"></View>
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/size_16"
+        android:gravity="center"
+        android:text="长春鸿航有限公司 0431-12345678"
+        android:textColor="@color/colorFont33"
+        android:textSize="@dimen/font_18" />
+</LinearLayout>
